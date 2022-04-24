@@ -17,17 +17,6 @@ const Toggle = () => {
   );
 };
 
-const Active = styled.div`
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  border-radius: 100px;
-  background-color: white;
-  transition: all 0.4s ease;
-  transform: ${(props) => (props.click ? 'translateX(100%)' : 'translateX(0%)')};
-  z-index: 2;
-`;
-
 const Wrapper = styled.div`
   display: flex;
   padding: 3px;
@@ -37,6 +26,17 @@ const Wrapper = styled.div`
   height: 50px;
   border-radius: 100px;
   z-index: 1;
+`;
+
+const Active = styled.div`
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: white;
+  transition: all 0.4s ease;
+  transform: ${(props) => (props.click ? 'translateX(100%)' : 'translateX(0%)')};
+  z-index: 2;
 `;
 
 const ToggleBtn = styled.div`

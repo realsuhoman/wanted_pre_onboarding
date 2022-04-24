@@ -63,7 +63,7 @@ const ActiveLine = styled.div`
   width: 150px;
   height: 3px;
   background-color: blue;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   transform: translateX(calc(100% * ${(props) => props.activeLine}));
 `;
 
