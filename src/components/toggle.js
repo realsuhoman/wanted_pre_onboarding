@@ -7,12 +7,12 @@ const Toggle = () => {
   return (
     <Wrapper>
       <Active click={clicked}></Active>
-      <Btn1 click={clicked} onClick={() => setClicked(false)}>
+      <ToggleBtn click={clicked} onClick={() => setClicked(false)}>
         기본
-      </Btn1>
-      <Btn1 click={clicked} onClick={() => setClicked(true)}>
+      </ToggleBtn>
+      <ToggleBtn click={clicked} onClick={() => setClicked(true)}>
         상세
-      </Btn1>
+      </ToggleBtn>
     </Wrapper>
   );
 };
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   z-index: 1;
 `;
 
-const Btn1 = styled.div`
+const ToggleBtn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
