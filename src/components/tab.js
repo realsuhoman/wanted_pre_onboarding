@@ -49,8 +49,8 @@ const TabButton = styled.div`
   text-align: center;
   font-size: 0.9rem;
   font-weight: 600;
-  cursor: pointer;
   color: ${(props) => (props.isClicked ? 'black' : 'lightgrey')};
+  cursor: pointer;
 `;
 
 const TabActiveBar = styled.div`
